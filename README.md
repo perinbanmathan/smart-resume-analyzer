@@ -2,6 +2,8 @@
 
 AI-powered Resume Analyzer that compares resumes with job descriptions and generates ATS score.
 
+for sample: https://smart-resume-analyzer-lemon.vercel.app/
+
 ## Tech Stack
 - React.js
 - Flask
