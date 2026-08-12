@@ -1,36 +1,46 @@
 # Smart Resume Analyzer
 
-An AI-powered resume analyzer that compares a resume with a job description and generates an ATS-style score.
+> AI-powered resume analysis tool that evaluates how well a resume matches a target job description.
 
-## Demo
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Try%20It-success)](https://smart-resume-analyzer-lemon.vercel.app/)
 
-[Live Demo](https://smart-resume-analyzer-lemon.vercel.app/)
+## 🎯 Overview
 
-## Features
+Smart Resume Analyzer helps job seekers understand how closely their resume aligns with a job description. It extracts resume text, analyzes keyword relevance, calculates an ATS-style similarity score, and highlights potential missing keywords.
 
-- Upload a resume in PDF format
-- Enter a job description
-- Generate an ATS-style score
-- Identify missing keywords
+## ✨ Features
 
-## Tech Stack
+- 📄 PDF resume upload
+- 📝 Job-description input
+- 📊 ATS-style matching score
+- 🔎 Keyword and skill-gap identification
+- ⚡ React-based web interface
+- 🔌 Flask backend API
 
-- React.js
-- Flask
-- NLP: TF-IDF and cosine similarity
-- PyMuPDF
+## 🛠️ Tech Stack
 
-## Project Structure
+| Layer | Technologies |
+|---|---|
+| Frontend | React.js |
+| Backend | Flask, Python |
+| NLP | TF-IDF, cosine similarity |
+| PDF Processing | PyMuPDF |
+| Deployment | Vercel (frontend) |
 
-- `backend/` — Flask API and resume-processing logic
-- `frontend/` — web application
-- `public/` — frontend public assets
-- `src/` — frontend source code
-- `Final output/` — generated/project output files
+## 📁 Structure
 
-## Run Locally
+```text
+smart-resume-analyzer/
+├── backend/          # Flask API and resume processing
+├── frontend/         # Frontend application
+├── public/           # Public frontend assets
+├── src/              # Frontend source code
+└── Final output/     # Project output/reference files
+```
 
-### Backend
+## 🚀 Run Locally
+
+### 1. Backend
 
 ```bash
 cd backend
@@ -38,7 +48,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-### Frontend
+### 2. Frontend
 
 ```bash
 cd frontend
@@ -46,6 +56,27 @@ npm install
 npm start
 ```
 
-## Status
+## 🧠 How It Works
 
-Active project / portfolio repository.
+```text
+Resume PDF + Job Description
+          ↓
+     Text Extraction
+          ↓
+   TF-IDF Vectorization
+          ↓
+ Cosine Similarity Analysis
+          ↓
+ Matching Score + Missing Keywords
+```
+
+## 🔮 Future Improvements
+
+- Semantic embeddings for deeper skill matching
+- Section-level resume analysis
+- Job-specific improvement suggestions
+- Authentication and saved analysis history
+
+## 📌 Status
+
+Active portfolio project.
